@@ -735,10 +735,6 @@ button:focus {
     object-fit: cover;
 }
 
-.js-focus-visible:focus:not(.focus-visible) {
-  outline: none;
-}
-
 /* FAQ */
 
 .faq__files {
@@ -1061,7 +1057,7 @@ button:focus {
   cursor: pointer;
 }
 
-.footer__form-checkbox:focus + .footer__form-checkbox-label {
+.footer__form-checkbox.focus-visible + .footer__form-checkbox-label {
   outline: 1px solid var(--color-gold);
 }
 
@@ -1121,6 +1117,10 @@ button:focus {
   padding-top: 87px;
   max-width: 363px;
   margin: 0 0 0 auto;
+}
+
+.js-focus-visible:focus:not(.focus-visible) {
+  outline: none;
 }
 
 @media (max-width: 1800px) {
