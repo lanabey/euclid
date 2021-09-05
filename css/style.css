@@ -1023,6 +1023,7 @@ button:focus {
   background-color: var(--color-field-grey);
   font-family: inherit;
   font-size: 16px;
+  color: inherit;
   line-height: 32px;
   border: none;
   margin-bottom: 25px;
@@ -1032,13 +1033,50 @@ button:focus {
       transition: background-color var(--transition-duration);
 }
 
+.footer__form-field::placeholder {
+  color: var(--color-grey);
+} 
+
+/* WebKit, Edge
+  ----------------------------  */
+.footer__form-field::-webkit-input-placeholder {
+  color: var(--color-grey);
+}
+
+/* Edge
+  ----------------------------  */
+.footer__form-field::-ms-input-placeholder {
+  color: var(--color-grey);
+}
+
+/* Firefox 4-18
+  ----------------------------  */
+.footer__form-field:-moz-placeholder {
+  color: var(--color-grey);
+  opacity: 1;
+}
+
+/* Firefox 19+
+  ----------------------------  */
+.footer__form-field::-moz-placeholder {
+  color: var(--color-grey);
+  opacity: 1;
+}
+
+/* IE 10-11
+  ----------------------------  */
+.footer__form-field:-ms-input-placeholder {
+  color: var(--color-grey);
+}
+
 .footer__form-field:focus {
   outline: none;
-  color: var(--color-white);
+  color: var(--color-grey);
   background-color: var(--color-active-field-grey);
 }
 
 .footer__form-field:hover, .footer__form-field:active {
+  color: var(--color-white);
   background-color: var(--color-active-field-grey);
 }
 
