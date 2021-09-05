@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Евклид - Проектные системы</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>  
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </head>
@@ -57,7 +54,7 @@
     <main>
       <section class="section-hero container">
         <div class="section-hero__swiper">
-          <div class="swiper-container">
+          <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide section-hero__cover-1"></div>
               <div class="swiper-slide section-hero__cover-2"></div>
@@ -104,16 +101,16 @@
         <h2 class="section-title">Как мы работаем</h2>
         <ul class="our-job__tabs">
           <li>
-            <button class="our-job__tab active js-focus-visible" data-id="1">1 шаг</button>
+            <button aria-label="Первый шаг" class="our-job__tab active js-focus-visible" data-id="1">1 шаг</button>
           </li>
           <li>
-            <button class="our-job__tab js-focus-visible" data-id="2">2 шаг</button>
+            <button aria-label="Второй шаг" class="our-job__tab js-focus-visible" data-id="2">2 шаг</button>
           </li>
           <li>
-            <button class="our-job__tab js-focus-visible" data-id="3">3 шаг</button>
+            <button aria-label="Третий шаг" class="our-job__tab js-focus-visible" data-id="3">3 шаг</button>
           </li>
           <li>
-            <button class="our-job__tab js-focus-visible" data-id="4">4 шаг</button>
+            <button aria-label="Четвертый шаг" class="our-job__tab js-focus-visible" data-id="4">4 шаг</button>
           </li>
         </ul>
         <div class="our-job__content">
@@ -311,6 +308,6 @@
     </svg>
 
     <script src="js/index.js"></script>
-    <script src="node_modules/focus-visible/dist/focus-visible.min.js"></script>
+    <script src="/node_modules/focus-visible/dist/focus-visible.min.js"></script>
   </body>
 </html>
