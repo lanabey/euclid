@@ -462,7 +462,7 @@ button:focus {
   width: 100%;
 }
 
-.swiper-container {
+.swiper {
   height: 100%;
 }
 
@@ -650,16 +650,21 @@ button:focus {
       transition: color var(--transition-duration);
 }
 
+.our-job__tab:active {
+  color: var(--color-orange);
+}
+
 .our-job__tab:focus {
   outline: 1px solid var(--color-orange);
 }
 
-.our-job__tab.active {
-  color: var(--color-orange);
+.our-job__tab:hover, .our-job__tab.active {
+  color: var(--color-gold);
+  outline: none;
 }
 
-.our-job__tab:hover {
-  color: var(--color-gold);
+.our-job__tab.focus-visible {
+  outline: 1px solid var(--color-orange);
 }
 
 .our-job__card {
