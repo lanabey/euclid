@@ -1084,6 +1084,14 @@ button:focus {
   margin-bottom: 31px;
 }
 
+.footer__form-field-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
 .footer__form-checkbox {
   margin: 0;
   opacity: 0;
@@ -1095,8 +1103,13 @@ button:focus {
 }
 
 .footer__form-checkbox-label {
-  position: relative;
-  padding-left: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox; 
+  display: inline-flex;
+  align-items: center;
+  -webkit-box-align: center;
+    -ms-flex-align: center;
+      align-items: center;
   cursor: pointer;
 }
 
@@ -1105,24 +1118,26 @@ button:focus {
 }
 
 .footer__form-checkmark {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox; 
+  display: inline-flex;
+  align-items: center;
+  -webkit-box-align: center;
+    -ms-flex-align: center;
+      align-items: center;
+  padding-left: 3px;
+  padding-bottom: 3px;
   width: 14px;
   height: 14px;
   border: 1px solid var(--color-grey);
 }
 
-.footer__form-checkmark::before {
-  position: relative;
+.footer__form-text {
+  padding-left: 5px;
 }
 
 .footer__form-checkmark::after {
   content: ' ';
-  position: absolute;
-  top: 0;
-  left: 3px;
   width: 4px;
   height: 7px;
   border-bottom: 2px solid #97EE3F;
