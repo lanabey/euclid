@@ -1090,7 +1090,6 @@ button:focus {
   display: flex;
   -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    line-height: 16px;
 }
 
 .footer__form-checkbox {
@@ -1112,6 +1111,7 @@ button:focus {
     -ms-flex-align: center;
       align-items: center;
   cursor: pointer;
+  line-height: 16px;
 }
 
 .footer__form-checkbox.focus-visible + .footer__form-checkbox-label {
