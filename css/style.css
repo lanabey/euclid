@@ -1178,6 +1178,10 @@ button:focus {
   margin: 0 0 0 auto;
 }
 
+.footer__form-field-container {
+  padding: 10px 0;
+}
+
 .js-focus-visible:focus:not(.focus-visible) {
   outline: none;
 }
@@ -1506,10 +1510,6 @@ button:focus {
   .footer__form-field-message {
     margin-bottom: 31px;
   }
-  .footer__form-checkmark {
-    top: 1px;
-    left: 4px;
-  }
   .footer__title {
     margin-bottom: 20px;
     padding-top: 5px;
@@ -1592,10 +1592,6 @@ button:focus {
     padding-left: 0;
     margin-bottom: 66px;
     max-width: 550px;
-  }
-  .footer__form-checkmark {
-    top: 0px;
-    left: 2px;
   }
   .footer__logo {
     display: block;
@@ -1804,9 +1800,7 @@ button:focus {
   }
   .footer__form-field-container {
     display: inline-block;
-  }
-  .footer__button {
-    margin-bottom: 10px;
+    padding: 0;
   }
   .footer__column:first-child {
     border-top: 1px solid #595959;
@@ -2052,7 +2046,6 @@ button:focus {
   }
   .footer__button {
     margin-right: 0;
-    margin-bottom: 12px;
   }
   .footer__column:first-child {
     border-top: 1px solid #595959;
